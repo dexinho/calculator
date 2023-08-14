@@ -1,0 +1,193 @@
+* {
+    font-family: 'Lato';
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#container {
+    width: 58vw;
+    max-width: 333px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: lightcyan;
+    border: 1px solid lightgray;
+    padding: 2px 0 5px 0;
+    transform: translate(0, 10%);
+}
+
+#numbers-and-symbols {
+    background-color: lightcyan;
+    width: 95%;
+    max-width: 330px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 6fr);
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 2%;
+    grid-row-gap: 0.1%;
+}
+
+.clickable-buttons-div {
+    width: 100%;
+    height: 50px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.clickable-buttons {
+    background-color: white;
+    width: 100%;
+    max-width: 75px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+}
+
+#button-equal {
+    background-color: royalblue;
+    color: white;
+}
+
+#final-number-div {
+    display: flex;
+    justify-content: flex-end;
+    height: 60px;
+    /* transform: translate(0, -5px); */
+}
+
+#final-number-input {
+    width: 100%;
+    text-align: end;
+    font-size: 30px;
+    border: 5px solid lightcyan;
+    border-inline: 10px solid rgb(212, 63, 175);
+    background-color: white;
+    color: black;
+}
+
+#final-number-input:focus {
+    outline: none;
+}
+
+#final-number-input::placeholder {
+    color: black;
+    /* border: 10px solid white; */
+}
+
+#settings-button-div {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#settings-button {
+    width: 100%;
+    transform: translate(0, 2px);
+    background-color: lightcyan;
+    border: 0;
+    text-align: center;
+}
+.fa-arrows-up-to-line {
+    font-size: 20px;
+}
+
+#slide-div {
+    display: none;
+    width: 100%;
+    height: 150px;
+}
+
+.calculations-p {
+    width: 100%;
+    height: 15px;
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+#how-it-is-done-div {
+    width: 100%;
+    height: 100px;
+    margin: 1px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#how-it-is-done-div-for-p {
+    width: 100%;
+    transform: translate(0, -33px);
+}
+#step-by-step {
+    width: 100%;
+    text-align: center;
+    color: rgb(212, 63, 175);
+    font-weight: bold;
+}
+#how-it-is-done-p {
+    text-align: center;
+    background-color: white;
+    border: 10px solid lightcyan;
+    height: 55px;
+}
+#how-many-decimals-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform: translate(0, 2px);
+}
+#add-or-substract-decimals-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#number-of-decimals-sentence-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#number-of-decimals-sentence-span {
+    text-align: center;
+    color: rgb(212, 63, 175);
+    font-weight: bold;
+}
+#how-many-decimals-span {
+    font-weight: bold;
+    color: maroon
+}
+.add-substract-buttons {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px 0 10px;
+    color: white;
+}
+#add-decimals-button {
+    background-color: rgb(38, 109, 32);
+}
+#substract-decimals-button {
+    background-color: blueviolet;
+}
